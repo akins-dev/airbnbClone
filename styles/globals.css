@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .disable-tap-highlight {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
