@@ -33,7 +33,7 @@ function Header() {
         <div className="hidden md:inline-flex hover:bg-gray-100 rounded-full px-4 py-2">
           <GlobeAltIcon className='h-5 cursor-pointer' />
         </div>
-        <div className='hidden md:inline-flex items-center border-2 hover:shadow-md rounded-full space-x-2 p-2 cursor-pointer text-gray-500'>
+        <div className='hidden sm:inline-flex items-center border-2 hover:shadow-md rounded-full space-x-2 p-2 cursor-pointer text-gray-500'>
           <MenuIcon className='h-5' />
           <UserCircleIcon className='h-5' />
         </div>
