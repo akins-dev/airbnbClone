@@ -1,5 +1,6 @@
 import Banner from '@/components/Banner'
 import Header from '@/components/Header'
+import Largecard from '@/components/Largecard';
 import MediumCard from '@/components/MediumCard';
 import SmallCard from '@/components/SmallCard';
 import Head from 'next/head'
@@ -51,6 +52,15 @@ export default function Home() {
               <MediumCard key={img} img={img} title={title} />
             ))}
           </div>
+        </section>
+
+        <section>
+          <Largecard 
+            img="https://links.papareact.com/4cj"
+            title="The Greatest Outdoors"
+            description="Wishlists curated by Airbnb."
+            buttonText="Get Inspired"
+          />
         </section>
       </main>
     </div>
