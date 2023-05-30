@@ -1,5 +1,6 @@
 import Banner from '@/components/Banner'
 import Header from '@/components/Header'
+import MediumCard from '@/components/MediumCard';
 import SmallCard from '@/components/SmallCard';
 import Head from 'next/head'
 
@@ -14,6 +15,13 @@ export default function Home() {
     {"img":"https://links.papareact.com/kji","location":"Newquay","distance":"6-hour drive"},
     {"img":"https://links.papareact.com/41m","location":"Hove","distance":"2-hour drive"}
   ]
+
+  const cardsData = [
+    {"img":"https://links.papareact.com/2io","title":"Outdoor getaways"},
+    {"img":"https://links.papareact.com/q7j","title":"Unique stays"},
+    {"img":"https://links.papareact.com/s03","title":"Entire homes"},
+    {"img":"https://links.papareact.com/8ix","title":"Pet allowed"}
+  ];
   return (
     <div className="">
       <Head>
@@ -33,6 +41,14 @@ export default function Home() {
               <SmallCard key={location} img={img} distance={distance} location={location} />
             ))}
           </div>
+        </section>
+
+        <section>
+          <h2 className="text-3xl sm:text-4xl font-semibold py-8">Live Anywhere</h2>
+
+          {cardsData?.map(({ img, title }) => (
+            <MediumCard key={img} img={img} title={title} />
+          ))}
         </section>
       </main>
     </div>
