@@ -28,7 +28,7 @@ function Header() {
 
       {/* Right */}
       <div className='flex items-center justify-end text-black'>
-        <p className='hidden md:inline-flex  hover:bg-gray-100 rounded-full px-4 py-2 text-sm cursor-pointer'>Airbnb your home</p>
+        <p className='hidden lg:inline-flex hover:bg-gray-100 font-medium rounded-full px-4 py-2 text-sm cursor-pointer'>Airbnb your home</p>
         
         <div className="hidden md:inline-flex hover:bg-gray-100 rounded-full px-4 py-2">
           <GlobeAltIcon className='h-5 cursor-pointer' />
