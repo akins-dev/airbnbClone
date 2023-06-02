@@ -12,7 +12,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
 import { useRouter } from 'next/router';
 
-function Header() {
+function Header({ placeholder }) {
 
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
@@ -67,7 +67,9 @@ function Header() {
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             type="text" 
-            className='flex-grow md:-mr-4 pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' placeholder='Start your search'/>
+            className='flex-grow md:-mr-4 pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' 
+            // More like an if(not)-else
+            placeholder={ placeholder || 'Start your search'}/>
           <SearchIcon className='hidden md:inline-flex h-8 bg-red-500 text-white rounded-full p-2 cursor-pointer disable-tap-highlight md:mx-2'/>
       </div>
       {/* Middle end */}
@@ -86,6 +88,7 @@ function Header() {
       </div>
       {/* Right end */}
 
+      {/* More like an if-else */}
       {searchInput && (
         <div className='hidden sm:inline-flex mt-2 flex-col col-span-3 mx-auto'>
           <DateRangePicker
