@@ -1,3 +1,9 @@
+## Airbnb Clone
+Using the capabilities of Next.js such as server side rendering to improve the SEO performance and users overall experience
+
+## Stack
+NEXT.JS (ReactJS, Tailwind CSS and DatePicker) 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
