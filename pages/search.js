@@ -6,7 +6,11 @@ import InfoCard from "@/components/InfoCard";
 
 
 function Search({ searchResults }) {
+
     const router = useRouter();
+
+    // IMPLEMENT
+    // Push to home page if router.query is empty
 
     // ES 6 Destructuring
     const { location, startDate, endDate, noOfGuests } = router.query;
@@ -19,7 +23,7 @@ function Search({ searchResults }) {
     return (
         <div>
             {/* 
-                props = { placeholder: blah | blah | blah } will be sent to Header
+                props = { placeholder: blah blah blah } will be sent to Header
                 so it can be destructured as { placeholder } in Header
             */}
             <Header placeholder={`${location} | ${range} | ${noOfGuests} guest${noOfGuests == 1 ? "" : "s"}`} />

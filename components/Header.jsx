@@ -70,7 +70,7 @@ function Header({ placeholder }) {
             className='flex-grow md:-mr-4 pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' 
             // More like an if(not)-else
             placeholder={ placeholder || 'Start your search'}/>
-          <SearchIcon className='hidden md:inline-flex h-8 bg-red-500 text-white rounded-full p-2 cursor-pointer disable-tap-highlight md:mx-2'/>
+          <SearchIcon onClick={search} className='md:inline-flex h-8 bg-red-500 text-white rounded-full p-2 cursor-pointer disable-tap-highlight md:mx-2'/>
       </div>
       {/* Middle end */}
 
